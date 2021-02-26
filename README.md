@@ -58,3 +58,10 @@ Connect spike, use  /dev/ttyACM0 as port in /vuforia…server/addons/vuf..roboti
 - Trying to use Php to start node server via: https://stackoverflow.com/questions/1697484/a-button-to-start-php-script-how
 
 ### Create a Bash script to automate this whole process
+
+## Using the VST on the RPi Hotspot 
+To install/run:
+-	Plug in the RPi
+-	Connect to its Wifi hotspot: RPiHotSpot
+-	Start the Spatial Toolbox phone app; it may be neccessary to set the discovery server to 192.168.50.10:8080
+
