@@ -10,12 +10,18 @@ Summary:
 
 ## Setting up the RPi
 
-Create an RPI image with
-https://www.raspberrypi.org/software/
-used Debian w Desktop, release 2021-01-11
+### Create an RPI image:
+Download and install from: https://www.raspberrypi.org/software/
+- successfully tested using Debian with Desktop, release 2021-01-11
 
-Used these instructions to set up hotspot (with Internet Routing)
-https://www.raspberryconnect.com/projects/65-raspberrypi-hotspot-accesspoints/168-raspberry-pi-hotspot-access-point-dhcpcd-method
+### Use [these instructions](https://www.raspberryconnect.com/projects/65-raspberrypi-hotspot-accesspoints/168-raspberry-pi-hotspot-access-point-dhcpcd-method) to set up a RPi hotspot (with Internet Routing)
+- [This tutorial](https://www.raspberryconnect.com/projects/65-raspberrypi-hotspot-accesspoints/168-raspberry-pi-hotspot-access-point-dhcpcd-method) explains this process well. Follow the steps to include internet Routing. 
+
+#### Methods used in this tutorial:
+- [Hostapd](https://en.wikipedia.org/wiki/Hostapd) enables the wifi card on the RPI to act as a hotspot (access point and WIFI authentication server), allowing users to connect to the RPi
+- [DNSmasq](https://en.wikipedia.org/wiki/Dnsmasq) provides DNS services, handling the internet traffic on the hotspot network, serving domain names on the local network 
+- [dhcpcd](https://wiki.archlinux.org/index.php/Dhcpcd) is a DHCP client. It assigns IP/Gateway/DNS addresses to network clients and store assigned addressesto avoid conflicts
+- [ip forwarding](https://openvpn.net/faq/what-is-and-how-do-i-enable-ip-forwarding-on-linux/) enables the Pi to also connect to the internet, and allows some traffic to bypass the hotspot and go out. this may be turned on or off as explained below
 
 Installing Spatial Toolbox for PI
 https://spatialtoolbox.vuforia.com/docs/vuforia-spatial-edge-server/raspberry-pi
