@@ -1,8 +1,16 @@
-# SpatialToolbox-RaspberryPi-NoCodingRequired
+# SpatialToolbox on RaspberryPi, No Coding Required
 
-RPI Access Point Notes
+This repo contains notes and instructions for configuring a WIFI-enabled Raspberry Pi (RPi) to act as a standalone WIFI hotspot and a [node.js](https://nodejs.org/) server running [Vuforia Spatial Toolbox](https://spatialtoolbox.vuforia.com/) (VST)) Edge server. 
 
-Created an RPI image with
+The purpose of this is to enable use of Vuforia Spatial Toolbox without the need for coding or connection to an existing WIFI network for less-technical audiences.
+
+Summary:
+- Setting up the RPi
+- Using the VST on the RPi Hotspot 
+
+## Setting up the RPi
+
+Create an RPI image with
 https://www.raspberrypi.org/software/
 used Debian w Desktop, release 2021-01-11
 
