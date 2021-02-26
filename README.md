@@ -38,7 +38,7 @@ Download and install from: https://spatialtoolbox.vuforia.com/docs/vuforia-spati
 Connect spike, use  /dev/ttyACM0 as port in /vuforia…server/addons/vuf..robotic/interfaces/Spike…/serial.js 
 
 ### Changes for Internet-free enviroments
-- If the Ethernet calbe is unplugged or internet access is unavailable, the Spatial Toolbox Edge Server will fail
+- If the Ethernet cable is unplugged or internet access is unavailable, the Spatial Toolbox Edge Server will fail
 - To resolve this, a change is made in the  *dnsmasq* seeting to route all traffic to the local DNS server, ignoring ip forwarding
 - to enable this
 -- edit /etc/dnsmasq.conf 
