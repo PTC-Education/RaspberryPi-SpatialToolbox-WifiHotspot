@@ -48,6 +48,8 @@ Connect spike, use  /dev/ttyACM0 as port in /vuforia…server/addons/vuf..roboti
 ### Enable auto start of node server with Pm2:
 - [Download, install and configure pm2](https://pm2.keymetrics.io/docs/usage/startup/) to automatically start the node server for the spatial toolbox when the Rpi is turned on. This allows this to run in a headless mode with nothing but the pi turned on
 
+*Work in Progress*
+
 ### [Add an Apache server for web interface](https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md), (still not working):
 - This might allow us to [use php to start and stop the node server through a browser]((https://serverfault.com/questions/215455/what-causes-php-pages-to-consistently-download-instead-of-running-normally)
 - More ideas: (https://unix.stackexchange.com/questions/155150/where-in-apache-2-do-you-set-the-servername-directive-globally) in sudo nano /etc/apache2/apache2.conf to set global servername 
