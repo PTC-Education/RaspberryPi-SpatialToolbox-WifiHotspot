@@ -32,7 +32,7 @@ Download and install from: https://spatialtoolbox.vuforia.com/docs/vuforia-spati
 
 ### Spatial Toolbox Interface
 - In order for Spatial Toolbox to work, a hardare interface needs to be added. 
-'*** PTC Education team -- can we update the SpatialToolbox-Mac/Windows-Interns folders to just hold the intialize.py and functions.py and addons folders needed to make this work? ***'
+*** PTC Education team -- let's update the SpatialToolbox-Mac/Windows-Interns folders to just hold the intialize.py and functions.py and addons folders needed to make this work? ***
 
 #### Spike Prime interface example:
 Connect spike, use  /dev/ttyACM0 as port in /vuforia…server/addons/vuf..robotic/interfaces/Spike…/serial.js 
@@ -57,3 +57,4 @@ Connect spike, use  /dev/ttyACM0 as port in /vuforia…server/addons/vuf..roboti
 - Use this page to create HTML: https://www.layoutit.com/build - https://bit.ly/2NqpeKU
 - Trying to use Php to start node server via: https://stackoverflow.com/questions/1697484/a-button-to-start-php-script-how
 
+### Create a Bash script to automate this whole process
