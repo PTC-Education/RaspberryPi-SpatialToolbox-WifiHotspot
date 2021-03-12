@@ -1,8 +1,12 @@
 # SpatialToolbox on RaspberryPi with a WiFi Hotspot
 
-This repo contains notes and instructions for configuring a WIFI-enabled Raspberry Pi (RPi) to act as a standalone WIFI hotspot and a [node.js](https://nodejs.org/) server running [Vuforia Spatial Toolbox](https://spatialtoolbox.vuforia.com/) (VST)) Edge server. 
+This repo contains notes and instructions for configuring a WIFI-enabled Raspberry Pi (RPi) to act as a standalone WIFI hotspot and a [node.js](https://nodejs.org/) server running [Vuforia Spatial Toolbox](https://spatialtoolbox.vuforia.com/) (VST) Edge server. 
 
 The purpose of this is to enable use of Vuforia Spatial Toolbox (VST) without the need for coding or connection to an existing WIFI network for less-technical audiences.
+
+<p align="center">
+<img src="RPiToolboxArduinoALD5.gif" width="700", height="394">
+</p>
 
 Summary:
 - Installing VST on the RPi
@@ -37,7 +41,7 @@ If you have experience with installing software from the command line, we'd reco
 
 If you would like to automate the install process you can use the file called "RPiToolboxInstall.sh" attached to the top of this repo. In order to get the file on the RPi, you can either run
 '''
-wget https://github.com/PTC-Academic/.../RPiToolboxInstall.sh
+wget https://github.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/blob/main/RPiToolboxInstall.sh
 '''
 or you can download the file to your computer and copy it to the RPi over ssh with the following command, where the first argument is the file path to RPiToolbox.sh on your computer, and the second argument is pi@IPaddress
 '''
@@ -61,7 +65,7 @@ See below for two different options on how to turn your RPi into a Wifi hotspot
 
 The simplest way to set up the hotspot is to use the file named "RPiHotspotSetup.sh" linked in this repo. In order to get the file on the RPi, you can either run
 '''
-wget https://github.com/PTC-Academic/.../RPiHotspotSetup.sh
+wget https://github.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/blob/main/RPiHotspotSetup.sh
 '''
 or you can download the file to your computer and copy it to the RPi over ssh with the following command, where the first argument is the file path to RPiHotspotSetup.sh on your computer, and the second argument is pi@IPaddress
 '''
@@ -111,7 +115,7 @@ pm2 save
 <br>
 You can also download and run the bash file linked here called "RPiAutoStartServerPM2.sh".
 '''
-wget 
+wget https://github.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/blob/main/RPiAutoStartServerPM2.sh
 '''
 And run it with
 '''
