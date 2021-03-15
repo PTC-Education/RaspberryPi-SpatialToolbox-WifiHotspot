@@ -130,7 +130,9 @@ sudo bash RPiAutoStartServerPM2.sh
 ## Changes for Internet-free enviroments
 If the Ethernet cable is unplugged or internet access is unavailable, the Spatial Toolbox Edge Server will fail. To resolve this, a change is made in the  *dnsmasq* seeting to route all traffic to the local DNS server, ignoring ip forwarding rules.
 
-### To enable this (i.e. use without Ethernet cable)
+<details>
+<summary><b>To enable this (i.e. use without Ethernet cable)</b></summary>
+<br>
 To edit the  *dnsmasq* seetings, run
 '''
 sudo nano /etc/dnsmasq.conf
@@ -140,8 +142,11 @@ Scroll all the way to the bottom of the text file, and add the following line of
 address=/#/192.168.50.10
 '''
 Then click ^x to exit the editor, and answer "Y" to save changes, then enter to exit.
+</details>
 
-### To disable this (i.e. you plugged the Ethernet cable back in and want to access the inernet)
+<details>
+<summary><b>To disable this (i.e. you plugged the Ethernet cable back in and want to access the inernet)</b></summary>
+<br>
 Once again, to edit the  *dnsmasq* seetings, run
 '''
 sudo nano /etc/dnsmasq.conf
@@ -155,6 +160,7 @@ so that the last line of the file is
 dhcp-range=192.168.50.150,192.168.50.200,255.255.255.0,12h
 '''
 Then click ^x to exit the editor, and answer "Y" to save changes, then enter to exit.
+</details>
 
 [More information and discussion of alternative methods](https://raspberrypi.stackexchange.com/questions/93883/client-connects-to-node-web-server-once-connected-to-raspberry-pi-access-point) 
 
@@ -162,8 +168,9 @@ Then click ^x to exit the editor, and answer "Y" to save changes, then enter to 
 ## Using the VST on the RPi Hotspot 
 To install/run:
 -	Plug in the RPi
--	Connect to its Wifi hotspot: RPiHotSpot
+-	Connect to its Wifi hotspot: RPiSpatialToolbox (or whatever you named your hotspot)
 -	On your computer, go to the url "192.168.50.10:8080" to access the web interface of the VST and set up your hardware interfaces and objects
+-	If you want to start/stop the VST yourself, you need to go into the "vuforia-spatial-edge-server" folder, and type "node server" to start or "^c" to stop
 -	Start the Spatial Toolbox phone app; it may be neccessary to set the discovery server to 192.168.50.10:8080
 
 Please refer to the [Vuforia Spatial Toolbox webiste](https://spatialtoolbox.vuforia.com/docs/use) for more information on how to use the VST.
