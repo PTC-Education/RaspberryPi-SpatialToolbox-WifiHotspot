@@ -181,15 +181,6 @@ To install/run:
 <img src="VST_RPi_ObjectSetup.gif" width="700", height="394">
 </p>
 
-Please refer to the [Vuforia Spatial Toolbox webiste](https://spatialtoolbox.vuforia.com/docs/use) for more information on how to use the VST.
+Please refer to the [Vuforia Spatial Toolbox website](https://spatialtoolbox.vuforia.com/docs/use) for more information on how to use the VST.
 
-
-*Work in Progress*
-
-### [Add an Apache server for web interface](https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md), (still not working):
-- This might allow us to [use php to start and stop the node server through a browser]((https://serverfault.com/questions/215455/what-causes-php-pages-to-consistently-download-instead-of-running-normally)
-- More ideas: (https://unix.stackexchange.com/questions/155150/where-in-apache-2-do-you-set-the-servername-directive-globally) in sudo nano /etc/apache2/apache2.conf to set global servername 
-- More: https://stackoverflow.com/questions/14667916/php-not-executing-from-webpage-but-is-fine-from-php-cli-on-a-raspberry-pi
-- Use this page to create HTML: https://www.layoutit.com/build - https://bit.ly/2NqpeKU
-- Trying to use Php to start node server via: https://stackoverflow.com/questions/1697484/a-button-to-start-php-script-how
 
