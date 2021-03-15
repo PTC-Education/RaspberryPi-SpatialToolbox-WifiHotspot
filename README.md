@@ -57,7 +57,7 @@ sudo bash RPiToolboxInstall.sh
 
 ## Set up the RPi as a Routed Wifi Hotspot
 
-See below for two different options on how to turn your RPi into a Wifi hotspot
+See below for two different options on how to turn your RPi into a Wifi hotspot. For the "Bash Script" method, the WiFi network is named "RPiSpatialToolbox" with the password "Vuforia123".
 
 <details>
 <summary><b>Automatically set up the Hotspot with a Bash Script</b></summary>
@@ -76,6 +76,8 @@ Once the file is copied to your RPi, you can run the file with
 '''
 sudo bash RPiHotspotSetup.sh
 '''
+
+Once set up, you can connect your devices to the WiFi network named "RPiSpatialToolbox" with the password "Vuforia123".
 
 </details>
 
