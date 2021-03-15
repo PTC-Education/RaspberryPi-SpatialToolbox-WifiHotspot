@@ -173,6 +173,14 @@ To install/run:
 -	If you want to start/stop the VST yourself, you need to go into the "vuforia-spatial-edge-server" folder, and type "node server" to start or "^c" to stop
 -	Start the Spatial Toolbox phone app; it may be neccessary to set the discovery server to 192.168.50.10:8080
 
+<p align="center">
+<img src="VST_RPi_HotspotHardwareSetup.gif" width="700", height="394">
+</p>
+
+<p align="center">
+<img src="VST_RPi_ObjectSetup.gif" width="700", height="394">
+</p>
+
 Please refer to the [Vuforia Spatial Toolbox webiste](https://spatialtoolbox.vuforia.com/docs/use) for more information on how to use the VST.
 
 
