@@ -40,18 +40,18 @@ If you have experience with installing software from the command line, we'd reco
 <br>
 
 If you would like to automate the install process you can use the file called "RPiToolboxInstall.sh" attached to the top of this repo. In order to get the file on the RPi, you can either run
-'''
-wget https://github.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/blob/main/RPiToolboxInstall.sh
-'''
+
+    wget https://github.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/blob/main/RPiToolboxInstall.sh
+
 or you can download the file to your computer and copy it to the RPi over ssh with the following command, where the first argument is the file path to RPiToolbox.sh on your computer, and the second argument is pi@IPaddress
-'''
-scp /Users/Matthew/Downloads/RPiToolboxInstall.sh pi@192.168.1.174:~
-'''
+
+    scp /Users/Matthew/Downloads/RPiToolboxInstall.sh pi@192.168.1.174:~
+
 
 Once the file is copied to your RPi, you can run the file with
-'''
-sudo bash RPiToolboxInstall.sh
-'''
+
+    sudo bash RPiToolboxInstall.sh
+
 
 </details>
 
@@ -64,18 +64,18 @@ See below for two different options on how to turn your RPi into a Wifi hotspot.
 <br>
 
 The simplest way to set up the hotspot is to use the file named "RPiHotspotSetup.sh" linked in this repo. In order to get the file on the RPi, you can either run
-'''
-wget https://github.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/blob/main/RPiHotspotSetup.sh
-'''
+
+    wget https://github.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/blob/main/RPiHotspotSetup.sh
+
 or you can download the file to your computer and copy it to the RPi over ssh with the following command, where the first argument is the file path to RPiHotspotSetup.sh on your computer, and the second argument is pi@IPaddress
-'''
-scp /Users/Matthew/Downloads/RPiHotspotSetup.sh pi@192.168.1.174:~
-'''
+
+    scp /Users/Matthew/Downloads/RPiHotspotSetup.sh pi@192.168.1.174:~
+
 
 Once the file is copied to your RPi, you can run the file with
-'''
-sudo bash RPiHotspotSetup.sh
-'''
+
+    sudo bash RPiHotspotSetup.sh
+
 
 Once set up, you can connect your devices to the WiFi network named "RPiSpatialToolbox" with the password "Vuforia123".
 
@@ -104,25 +104,25 @@ If you would like to have the node server automatically start when the RPi boots
 <br>
 You can set this up with the following series of commands.
 
-'''
-sudo npm install -g pm2
-sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u pi --hp /home/pi
-pm2 start home/pi/vuforia-spatial-edge-server/server.js
-pm2 save
-'''
+
+    sudo npm install -g pm2
+    sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u pi --hp /home/pi
+    pm2 start home/pi/vuforia-spatial-edge-server/server.js
+    pm2 save
+
 </details>
 
 <details>
 <summary><b>Bash Script</b></summary>
 <br>
 You can also download and run the bash file linked here called "RPiAutoStartServerPM2.sh".
-'''
-wget https://github.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/blob/main/RPiAutoStartServerPM2.sh
-'''
+
+    wget https://github.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/blob/main/RPiAutoStartServerPM2.sh
+
 And run it with
-'''
-sudo bash RPiAutoStartServerPM2.sh
-'''
+
+    sudo bash RPiAutoStartServerPM2.sh
+
 </details>
 
 
@@ -134,13 +134,13 @@ If the Ethernet cable is unplugged or internet access is unavailable, the Spatia
 <summary><b>To enable this (i.e. use without Ethernet cable)</b></summary>
 <br>
 To edit the  *dnsmasq* seetings, run
-'''
-sudo nano /etc/dnsmasq.conf
-'''
+
+    sudo nano /etc/dnsmasq.conf
+
 Scroll all the way to the bottom of the text file, and add the following line of text
-'''
-address=/#/192.168.50.10
-'''
+
+    address=/#/192.168.50.10
+
 Then click ^x to exit the editor, and answer "Y" to save changes, then enter to exit.
 </details>
 
@@ -148,17 +148,17 @@ Then click ^x to exit the editor, and answer "Y" to save changes, then enter to 
 <summary><b>To disable this (i.e. you plugged the Ethernet cable back in and want to access the inernet)</b></summary>
 <br>
 Once again, to edit the  *dnsmasq* seetings, run
-'''
-sudo nano /etc/dnsmasq.conf
-'''
+
+    sudo nano /etc/dnsmasq.conf
+
 Scroll all the way to the bottom of the text file, and **remove** the following line of text
-'''
-address=/#/192.168.50.10
-'''
+
+    address=/#/192.168.50.10
+
 so that the last line of the file is
-'''
-dhcp-range=192.168.50.150,192.168.50.200,255.255.255.0,12h
-'''
+
+    dhcp-range=192.168.50.150,192.168.50.200,255.255.255.0,12h
+
 Then click ^x to exit the editor, and answer "Y" to save changes, then enter to exit.
 </details>
 
