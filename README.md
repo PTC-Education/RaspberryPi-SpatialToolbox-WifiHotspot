@@ -117,7 +117,7 @@ You can set this up with the following series of commands.
 <br>
 You can also download and run the bash file linked here called "RPiAutoStartServerPM2.sh".
 
-    wget https://github.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/blob/main/RPiAutoStartServerPM2.sh
+    wget https://raw.githubusercontent.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/main/RPiAutoStartServerPM2.sh
 
 And run it with
 
