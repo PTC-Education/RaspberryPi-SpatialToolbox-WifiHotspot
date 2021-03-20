@@ -41,7 +41,7 @@ If you have experience with installing software from the command line, we'd reco
 
 If you would like to automate the install process you can use the file called "RPiToolboxInstall.sh" attached to the top of this repo. In order to get the file on the RPi, you can either run
 
-    wget https://github.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/blob/main/RPiToolboxInstall.sh
+    wget https://raw.githubusercontent.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/main/RPiToolboxInstall.sh
 
 or you can download the file to your computer and copy it to the RPi over ssh with the following command, where the first argument is the file path to RPiToolbox.sh on your computer, and the second argument is pi@IPaddress
 
@@ -65,7 +65,7 @@ See below for two different options on how to turn your RPi into a Wifi hotspot.
 
 The simplest way to set up the hotspot is to use the file named "RPiHotspotSetup.sh" linked in this repo. In order to get the file on the RPi, you can either run
 
-    wget https://github.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/blob/main/RPiHotspotSetup.sh
+    wget https://raw.githubusercontent.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/main/RPiHotspotSetup.sh
 
 or you can download the file to your computer and copy it to the RPi over ssh with the following command, where the first argument is the file path to RPiHotspotSetup.sh on your computer, and the second argument is pi@IPaddress
 
