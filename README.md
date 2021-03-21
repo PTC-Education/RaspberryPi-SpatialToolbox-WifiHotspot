@@ -51,6 +51,10 @@ or you can download the file to your computer and copy it to the RPi over ssh wi
 Once the file is copied to your RPi, you can run the file with
 
     sudo bash RPiToolboxInstall.sh
+    
+If you'd like to change or add anything to the edge server, you need to run the following command from within the /vuforia-spacial-edge-server folder
+
+    sudo chown -R $USER /home/pi
 
 
 </details>
