@@ -93,12 +93,16 @@ Once set up, you can connect your devices to the WiFi network named "RPiSpatialT
   
 </details>
 
-#### Methods used in this setup/tutorial:
-- [Hostapd](https://en.wikipedia.org/wiki/Hostapd) enables the wifi card on the RPI to act as a hotspot (access point and WIFI authentication server), allowing users to connect to the RPi
+<details>
+<summary><b>Learn More about the Methods Used</b></summary>
+<br>
+ - [Hostapd](https://en.wikipedia.org/wiki/Hostapd) enables the wifi card on the RPI to act as a hotspot (access point and WIFI authentication server), allowing users to connect to the RPi
 - [DNSmasq](https://en.wikipedia.org/wiki/Dnsmasq) provides DNS services, handling the internet traffic on the hotspot network, serving domain names on the local network 
 - [dhcpcd](https://wiki.archlinux.org/index.php/Dhcpcd) is a DHCP client. It assigns IP/Gateway/DNS addresses to network clients and store assigned addressesto avoid conflicts
 - [ip forwarding](https://openvpn.net/faq/what-is-and-how-do-i-enable-ip-forwarding-on-linux/) enables the Pi to also connect to the internet, and allows some traffic to bypass the hotspot and go out. this may be turned on or off as explained below
 - [ip tables](http://www.intellamech.com/RaspberryPi-projects/rpi_iptables.html) are used with ip forwarding to allow devices connected to the hotspot to access the internet
+  
+</details>
 
 ## **Optional:** Enable Auto Start of Node Server with PM2
 If you would like to have the node server automatically start when the RPi boots up, you can use [a package called "Pm2"](https://pm2.keymetrics.io/docs/usage/startup/). **Note:** you might have to re-set up the pm2 service if you make any changes to VST install.
@@ -176,6 +180,8 @@ To install/run:
 -	On your computer, go to the url "192.168.50.10:8080" to access the web interface of the VST and set up your hardware interfaces and objects
 -	If you want to start/stop the VST yourself, you need to go into the "vuforia-spatial-edge-server" folder, and type "node server" to start or "^c" to stop
 -	Start the Spatial Toolbox phone app; it may be neccessary to set the discovery server to 192.168.50.10:8080
+
+### Check out [this hello-world for setting up an arduino](https://github.com/PTC-Academic/DX-Resources/tree/master/Curriculum_Resources/DX-Exercises/Vuforia%20Spatial%20Toolbox%20-%20Arduino%20Hello%20World) hardware interface
 
 <p align="center">
 <img src="VST_RPi_HotspotHardwareSetup.gif" width="700", height="394">
