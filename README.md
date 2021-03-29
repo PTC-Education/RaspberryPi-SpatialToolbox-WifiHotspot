@@ -39,11 +39,11 @@ If you have experience with installing software from the command line, we'd reco
 <summary><b>Install Basic Interfaces with Bash Script (includes Arduino addon)</b></summary>
 <br>
 
-If you would like to automate the install process you can use the file called "RPiToolboxInstall.sh" attached to the top of this repo. In order to get the file on the RPi, you can either run
+OPTION 1: If you would like to automate the install process you can use the file called "RPiToolboxInstall.sh" attached to the top of this repo. In order to get the file on the RPi, you can run
 
     wget https://raw.githubusercontent.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/main/RPiToolboxInstall.sh
 
-or you can download the file to your computer and copy it to the RPi over ssh with the following command, where the first argument is the file path to RPiToolbox.sh on your computer, and the second argument is pi@IPaddress
+OPTION 2: You can also download the file to your computer and copy it to the RPi over ssh with the following command, where the first argument is the file path to RPiToolbox.sh on your computer, and the second argument is pi@IPaddress
 
     scp /Users/Matthew/Downloads/RPiToolboxInstall.sh pi@192.168.1.174:~
 
@@ -67,11 +67,11 @@ See below for two different options on how to turn your RPi into a Wifi hotspot.
 <summary><b>Automatically set up the Hotspot with a Bash Script</b></summary>
 <br>
 
-The simplest way to set up the hotspot is to use the file named "RPiHotspotSetup.sh" linked in this repo. In order to get the file on the RPi, you can either run
+OPTION 1: The simplest way to set up the hotspot is to use the file named "RPiHotspotSetup.sh" linked in this repo. In order to get the file on the RPi, you can either run
 
     wget https://raw.githubusercontent.com/PTC-Academic/RaspberryPi-SpatialToolbox-WifiHotspot/main/RPiHotspotSetup.sh
 
-or you can download the file to your computer and copy it to the RPi over ssh with the following command, where the first argument is the file path to RPiHotspotSetup.sh on your computer, and the second argument is pi@IPaddress
+OPTION 2: or you can download the file to your computer and copy it to the RPi over ssh with the following command, where the first argument is the file path to RPiHotspotSetup.sh on your computer, and the second argument is pi@IPaddress
 
     scp /Users/Matthew/Downloads/RPiHotspotSetup.sh pi@192.168.1.174:~
 
@@ -81,7 +81,11 @@ Once the file is copied to your RPi, you can run the file with
     sudo bash RPiHotspotSetup.sh
 
 
-Once set up, you can connect your devices to the WiFi network named "RPiSpatialToolbox" with the password "Vuforia123".
+Once the script has run, you'll need to reboot your Pi by running
+
+    sudo reboot
+
+You can now connect your devices to the WiFi network named "RPiSpatialToolbox" with the password "Vuforia123".
 
 </details>
 
