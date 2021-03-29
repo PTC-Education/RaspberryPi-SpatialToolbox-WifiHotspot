@@ -181,9 +181,9 @@ Then click ^x to exit the editor, and answer "Y" to save changes, then enter to 
 To install/run:
 -	Plug in the RPi
 -	Connect to its Wifi hotspot: RPiSpatialToolbox (or whatever you named your hotspot)
+- If you want to start/stop the VST yourself, you need to go into the "vuforia-spatial-edge-server" folder (enter "cd vuforia-spatial-edge-server" in terminal), and type "node server" to start or "^c" to stop
 -	On your computer, go to the url "192.168.50.10:8080" to access the web interface of the VST and set up your hardware interfaces and objects
--	If you want to start/stop the VST yourself, you need to go into the "vuforia-spatial-edge-server" folder, and type "node server" to start or "^c" to stop
--	Start the Spatial Toolbox phone app; it may be neccessary to set the discovery server to 192.168.50.10:8080
+-	Start the Spatial Toolbox phone app. (It may be neccessary to set the discovery server to 192.168.50.10:8080 - see [the bottom of this page](https://spatialtoolbox.vuforia.com/docs/use/using-the-app) for more info on the developer features)
 
 ### Check out [this hello-world for setting up an arduino](https://github.com/PTC-Academic/DX-Resources/tree/master/Curriculum_Resources/DX-Exercises/Vuforia%20Spatial%20Toolbox%20-%20Arduino%20Hello%20World) hardware interface
 
